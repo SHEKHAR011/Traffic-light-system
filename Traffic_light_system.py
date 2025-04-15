@@ -6,13 +6,13 @@ pygame.init()
 
 WIDTH, HEIGHT = 1500, 800
 win = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Indian Traffic Signal System")
+pygame.display.set_caption("Traffic Light System")
 
 car_image = pygame.image.load("car.png")
 car_image = pygame.transform.scale(car_image, (30, 30))
 pygame.mouse.set_visible(False)
 
-# Colors
+
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GREEN = (34, 139, 34)
@@ -20,12 +20,12 @@ RED = (255, 0, 0)
 YELLOW = (255, 255, 0)
 GRAY = (50, 50, 50)
 
-# Signal States
+
 RED_LIGHT = 0
 YELLOW_LIGHT = 1
 GREEN_LIGHT = 2
 
-# Timing
+
 GREEN_TIME = 180
 YELLOW_TIME = 60
 
@@ -35,7 +35,7 @@ INNER_RADIUS = 170
 CAR_SPEED = 3
 EXIT_SPEED = 5
 
-# Traffic Light Class
+
 class TrafficLight:
     def __init__(self, x, y, is_horizontal, facing_right_or_down, exit_dir, name):
         self.x = x
@@ -115,7 +115,7 @@ class TrafficLight:
             return True
         return False
 
-# Setup Lights
+
 lights = [
     TrafficLight(740, 270, False, True, "down", "north"),
     TrafficLight(740, 450, False, False, "up", "south"),
@@ -123,7 +123,7 @@ lights = [
     TrafficLight(810, 380, True, False, "left", "east"),
 ]
 
-# Draw Environment
+
 def draw_environment():
     win.fill(WHITE)
     pygame.draw.rect(win, GRAY, (0, 290, WIDTH, 220))
@@ -135,7 +135,7 @@ def draw_environment():
     pygame.draw.circle(win, GRAY, CIRCLE_CENTER, OUTER_RADIUS)
     pygame.draw.circle(win, GREEN, CIRCLE_CENTER, INNER_RADIUS)
 
-# Light Phases
+
 phase_order = ["north", "west", "south", "east"]
 phase_index = 0
 phase_timer = GREEN_TIME
@@ -160,7 +160,7 @@ def update_traffic_lights():
     else:
         phase_timer -= 1
 
-# Get clicked road
+
 def get_road_for_mouse(x, y):
     if 290 <= y <= 510:
         return lights[2] if x < 750 else lights[3]
@@ -168,7 +168,6 @@ def get_road_for_mouse(x, y):
         return lights[0] if y < 400 else lights[1]
     return None
 
-# Main Loop
 clock = pygame.time.Clock()
 running = True
 

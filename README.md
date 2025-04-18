@@ -1,4 +1,3 @@
-# Traffic-light-system
 Traffic_light_system
 # 🚦 Smart Traffic Light Simulation
 

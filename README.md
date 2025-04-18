@@ -38,7 +38,7 @@ A dynamic and realistic simulation of a **4-way Indian intersection** using Pyth
 | 9    | North     | GREEN   | 3 sec    |
 | 10   | North     | YELLOW  | 1 sec    |
 
-🔁 Then repeats...
+
 
 ---
 

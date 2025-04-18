@@ -1,4 +1,3 @@
-Traffic_light_system
 # 🚦 Smart Traffic Light Simulation
 
 A dynamic and realistic simulation of a **4-way Indian intersection** using Python and Pygame! This project demonstrates a traffic light system with roundabout logic, phase cycling, and vehicles that obey signals.

@@ -44,7 +44,7 @@ A dynamic and realistic simulation of a **4-way Indian intersection** using Pyth
 
 ## 📸 Preview
 
-<img src="car.png" alt="Traffic Simulation Preview" width="700"/>
+<img src="screenshot.png" alt="Traffic Simulation Preview" width="700"/>
 
 > 📌 Make sure to include this image (`screenshot.png`) in the same directory as your README when pushing to GitHub.
 

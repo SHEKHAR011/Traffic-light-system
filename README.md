@@ -52,7 +52,7 @@ A dynamic and realistic simulation of a **4-way Indian intersection** using Pyth
 ## 🛠 Installation
 
 ```bash
-git clone https://github.com/yourusername/traffic-simulation-python.git
+git clone https://github.com/SHEKHAR011/Traffic-light-system.git
 cd traffic-simulation-python
 pip install pygame
-python traffic_simulation.py
+(Run this file) python traffic_simulation.py
